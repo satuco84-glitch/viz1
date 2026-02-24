@@ -1,0 +1,10 @@
+project: 
+  type: website
+  output-dir: docs
+  title: "visualizacion hola mundo"
+format: 
+    html:
+        theme: cosmo
+        toc: true
+code-fold: true
+  
