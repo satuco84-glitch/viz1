@@ -122,6 +122,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#realizado-por-santiago-acosta-y-juan-rodríguez" id="toc-realizado-por-santiago-acosta-y-juan-rodríguez" class="nav-link" data-scroll-target="#realizado-por-santiago-acosta-y-juan-rodríguez">Realizado por: Santiago Acosta y Juan Rodríguez</a></li>
   <li><a href="#pregunta-1-distribución-de-masa-corporal" id="toc-pregunta-1-distribución-de-masa-corporal" class="nav-link" data-scroll-target="#pregunta-1-distribución-de-masa-corporal">Pregunta 1: Distribución de Masa Corporal</a>
   <ul class="collapse">
   <li><a href="#elección-del-gráfico" id="toc-elección-del-gráfico" class="nav-link" data-scroll-target="#elección-del-gráfico">Elección del Gráfico</a></li>
@@ -161,8 +162,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introducción" class="level1">
 <h1>Introducción</h1>
-<p>En este documento se analiza el dataset de pingüinos para responder a tres preguntas clave sobre su morfología y distribución geográfica.</p>
-<div id="1fce07fc" class="cell" data-execution_count="1">
+<p>En este documento se analiza el dataset de pingüinos para responder a tres preguntas clave sobre su morfología y distribución geográfica, se hizo una limpieza de datos sobre el sexo no identificado del espécimen.</p>
+</section>
+<section id="realizado-por-santiago-acosta-y-juan-rodríguez" class="level1">
+<h1>Realizado por: Santiago Acosta y Juan Rodríguez</h1>
+<div id="05849f4a" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -280,23 +284,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div aria-describedby="fig-boxplot-masa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-e275aed8a165425280a9d94b96bf50eb.vega-embed {
+  #altair-viz-75fa4968df9249e2ba7feaa3761b0010.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-e275aed8a165425280a9d94b96bf50eb.vega-embed details,
-  #altair-viz-e275aed8a165425280a9d94b96bf50eb.vega-embed details summary {
+  #altair-viz-75fa4968df9249e2ba7feaa3761b0010.vega-embed details,
+  #altair-viz-75fa4968df9249e2ba7feaa3761b0010.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-e275aed8a165425280a9d94b96bf50eb"></div>
+<div id="altair-viz-75fa4968df9249e2ba7feaa3761b0010"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e275aed8a165425280a9d94b96bf50eb") {
-      outputDiv = document.getElementById("altair-viz-e275aed8a165425280a9d94b96bf50eb");
+    if (outputDiv.id !== "altair-viz-75fa4968df9249e2ba7feaa3761b0010") {
+      outputDiv = document.getElementById("altair-viz-75fa4968df9249e2ba7feaa3761b0010");
     }
 
     const paths = {
@@ -380,23 +384,23 @@ Figure&nbsp;1: Distribución de la masa corporal por especie e isla.
 <div aria-describedby="fig-heatmap-especies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-c3f8a559846c4e79b8f20f7114749643.vega-embed {
+  #altair-viz-673df13be151409b8c01a0b6fd1faf6a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c3f8a559846c4e79b8f20f7114749643.vega-embed details,
-  #altair-viz-c3f8a559846c4e79b8f20f7114749643.vega-embed details summary {
+  #altair-viz-673df13be151409b8c01a0b6fd1faf6a.vega-embed details,
+  #altair-viz-673df13be151409b8c01a0b6fd1faf6a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c3f8a559846c4e79b8f20f7114749643"></div>
+<div id="altair-viz-673df13be151409b8c01a0b6fd1faf6a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c3f8a559846c4e79b8f20f7114749643") {
-      outputDiv = document.getElementById("altair-viz-c3f8a559846c4e79b8f20f7114749643");
+    if (outputDiv.id !== "altair-viz-673df13be151409b8c01a0b6fd1faf6a") {
+      outputDiv = document.getElementById("altair-viz-673df13be151409b8c01a0b6fd1faf6a");
     }
 
     const paths = {
@@ -486,23 +490,23 @@ Figure&nbsp;2: Presencia de especies por isla (frecuencia).
 <div aria-describedby="fig-density-sexo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a.vega-embed {
+  #altair-viz-1ccbb2d1adcd4260817df3f7d25581d0.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a.vega-embed details,
-  #altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a.vega-embed details summary {
+  #altair-viz-1ccbb2d1adcd4260817df3f7d25581d0.vega-embed details,
+  #altair-viz-1ccbb2d1adcd4260817df3f7d25581d0.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a"></div>
+<div id="altair-viz-1ccbb2d1adcd4260817df3f7d25581d0"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a") {
-      outputDiv = document.getElementById("altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a");
+    if (outputDiv.id !== "altair-viz-1ccbb2d1adcd4260817df3f7d25581d0") {
+      outputDiv = document.getElementById("altair-viz-1ccbb2d1adcd4260817df3f7d25581d0");
     }
 
     const paths = {
