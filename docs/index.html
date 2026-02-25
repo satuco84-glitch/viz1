@@ -162,7 +162,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introducción" class="level1">
 <h1>Introducción</h1>
 <p>En este documento se analiza el dataset de pingüinos para responder a tres preguntas clave sobre su morfología y distribución geográfica.</p>
-<div id="b1df158d" class="cell" data-execution_count="1">
+<div id="7f181eac" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -261,7 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>¿Por qué?</strong>: El boxplot resume la distribución (mediana, cuartiles y valores atípicos) de forma compacta.</li>
 <li><strong>¿Cómo facilitar la comparación?</strong>: Usamos facetas (subplots) para separar las islas, evitando que el gráfico principal se sobrecargue y permitiendo comparar las especies dentro de cada contexto geográfico.</li>
 </ul>
-<div id="02df1fe7" class="cell" data-execution_count="2">
+<div id="fd6b7473" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(penguins).mark_boxplot().encode(</span>
@@ -276,23 +276,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display" data-execution_count="2">
 
 <style>
-  #altair-viz-e0fb076a3abb4083b8f921541faeb87f.vega-embed {
+  #altair-viz-e1e27f58fc364abc8b7abcfeaebe4219.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-e0fb076a3abb4083b8f921541faeb87f.vega-embed details,
-  #altair-viz-e0fb076a3abb4083b8f921541faeb87f.vega-embed details summary {
+  #altair-viz-e1e27f58fc364abc8b7abcfeaebe4219.vega-embed details,
+  #altair-viz-e1e27f58fc364abc8b7abcfeaebe4219.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-e0fb076a3abb4083b8f921541faeb87f"></div>
+<div id="altair-viz-e1e27f58fc364abc8b7abcfeaebe4219"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e0fb076a3abb4083b8f921541faeb87f") {
-      outputDiv = document.getElementById("altair-viz-e0fb076a3abb4083b8f921541faeb87f");
+    if (outputDiv.id !== "altair-viz-e1e27f58fc364abc8b7abcfeaebe4219") {
+      outputDiv = document.getElementById("altair-viz-e1e27f58fc364abc8b7abcfeaebe4219");
     }
 
     const paths = {
@@ -353,7 +353,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="técnica-visual" class="level3">
 <h3 class="anchored" data-anchor-id="técnica-visual">Técnica Visual</h3>
 <p>Utilizaremos un <strong>Gráfico de Matriz / Heatmap</strong> o un <strong>Gráfico de Barras Facetado</strong> para mostrar la relación entre categorías de forma compacta.</p>
-<div id="555db332" class="cell" data-execution_count="3">
+<div id="33891094" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(penguins).mark_rect().encode(</span>
@@ -369,23 +369,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display" data-execution_count="3">
 
 <style>
-  #altair-viz-64d5f76bccea40298f452a1c55b734b7.vega-embed {
+  #altair-viz-91c7a40c81584102bb908bc99f0a1fd4.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-64d5f76bccea40298f452a1c55b734b7.vega-embed details,
-  #altair-viz-64d5f76bccea40298f452a1c55b734b7.vega-embed details summary {
+  #altair-viz-91c7a40c81584102bb908bc99f0a1fd4.vega-embed details,
+  #altair-viz-91c7a40c81584102bb908bc99f0a1fd4.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-64d5f76bccea40298f452a1c55b734b7"></div>
+<div id="altair-viz-91c7a40c81584102bb908bc99f0a1fd4"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-64d5f76bccea40298f452a1c55b734b7") {
-      outputDiv = document.getElementById("altair-viz-64d5f76bccea40298f452a1c55b734b7");
+    if (outputDiv.id !== "altair-viz-91c7a40c81584102bb908bc99f0a1fd4") {
+      outputDiv = document.getElementById("altair-viz-91c7a40c81584102bb908bc99f0a1fd4");
     }
 
     const paths = {
@@ -449,7 +449,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Justificación</strong>: Al comparar solo dos categorías (macho/hembra), superponer las distribuciones permite ver directamente el desplazamiento de la media y la variabilidad de cada grupo.</li>
 </ul>
-<div id="3a98d905" class="cell" data-execution_count="4">
+<div id="bf162b75" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(penguins).transform_density(</span>
@@ -468,23 +468,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display" data-execution_count="4">
 
 <style>
-  #altair-viz-43a87de9b2d44df4916a25196ee85d59.vega-embed {
+  #altair-viz-57fac986b74d46fcadf4f8b6d32c2ff5.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-43a87de9b2d44df4916a25196ee85d59.vega-embed details,
-  #altair-viz-43a87de9b2d44df4916a25196ee85d59.vega-embed details summary {
+  #altair-viz-57fac986b74d46fcadf4f8b6d32c2ff5.vega-embed details,
+  #altair-viz-57fac986b74d46fcadf4f8b6d32c2ff5.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-43a87de9b2d44df4916a25196ee85d59"></div>
+<div id="altair-viz-57fac986b74d46fcadf4f8b6d32c2ff5"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-43a87de9b2d44df4916a25196ee85d59") {
-      outputDiv = document.getElementById("altair-viz-43a87de9b2d44df4916a25196ee85d59");
+    if (outputDiv.id !== "altair-viz-57fac986b74d46fcadf4f8b6d32c2ff5") {
+      outputDiv = document.getElementById("altair-viz-57fac986b74d46fcadf4f8b6d32c2ff5");
     }
 
     const paths = {
