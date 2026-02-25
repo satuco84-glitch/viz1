@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: docs
   title: "visualizacion hola mundo"
+
+jupyter: python3
+
 format: 
     html:
         theme: cosmo
