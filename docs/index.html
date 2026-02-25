@@ -162,7 +162,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introducción" class="level1">
 <h1>Introducción</h1>
 <p>En este documento se analiza el dataset de pingüinos para responder a tres preguntas clave sobre su morfología y distribución geográfica.</p>
-<div id="e8d8a322" class="cell" data-execution_count="1">
+<div id="1fce07fc" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -280,23 +280,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div aria-describedby="fig-boxplot-masa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-744464ed03b4443a8374ff3565696607.vega-embed {
+  #altair-viz-e275aed8a165425280a9d94b96bf50eb.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-744464ed03b4443a8374ff3565696607.vega-embed details,
-  #altair-viz-744464ed03b4443a8374ff3565696607.vega-embed details summary {
+  #altair-viz-e275aed8a165425280a9d94b96bf50eb.vega-embed details,
+  #altair-viz-e275aed8a165425280a9d94b96bf50eb.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-744464ed03b4443a8374ff3565696607"></div>
+<div id="altair-viz-e275aed8a165425280a9d94b96bf50eb"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-744464ed03b4443a8374ff3565696607") {
-      outputDiv = document.getElementById("altair-viz-744464ed03b4443a8374ff3565696607");
+    if (outputDiv.id !== "altair-viz-e275aed8a165425280a9d94b96bf50eb") {
+      outputDiv = document.getElementById("altair-viz-e275aed8a165425280a9d94b96bf50eb");
     }
 
     const paths = {
@@ -361,7 +361,7 @@ Figure&nbsp;1: Distribución de la masa corporal por especie e isla.
 <p><strong>Pregunta:</strong> ¿Qué especies de pingüinos se encuentran en cada isla? ¿Alguna especie está presente solo en una isla?</p>
 <section id="técnica-visual" class="level3">
 <h3 class="anchored" data-anchor-id="técnica-visual">Técnica Visual</h3>
-<p>Utilizaremos un <strong>Gráfico de Matriz / Heatmap</strong> o un <strong>Gráfico de Barras Facetado</strong> para mostrar la relación entre categorías de forma compacta.</p>
+<p>Utilizaremos un <strong>Heatmap</strong> para mostrar la relación entre categorías de forma compacta.</p>
 <div id="cell-fig-heatmap-especies" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
@@ -380,23 +380,23 @@ Figure&nbsp;1: Distribución de la masa corporal por especie e isla.
 <div aria-describedby="fig-heatmap-especies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-e660dcba6b964e3da12199772d29a7af.vega-embed {
+  #altair-viz-c3f8a559846c4e79b8f20f7114749643.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-e660dcba6b964e3da12199772d29a7af.vega-embed details,
-  #altair-viz-e660dcba6b964e3da12199772d29a7af.vega-embed details summary {
+  #altair-viz-c3f8a559846c4e79b8f20f7114749643.vega-embed details,
+  #altair-viz-c3f8a559846c4e79b8f20f7114749643.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-e660dcba6b964e3da12199772d29a7af"></div>
+<div id="altair-viz-c3f8a559846c4e79b8f20f7114749643"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e660dcba6b964e3da12199772d29a7af") {
-      outputDiv = document.getElementById("altair-viz-e660dcba6b964e3da12199772d29a7af");
+    if (outputDiv.id !== "altair-viz-c3f8a559846c4e79b8f20f7114749643") {
+      outputDiv = document.getElementById("altair-viz-c3f8a559846c4e79b8f20f7114749643");
     }
 
     const paths = {
@@ -461,7 +461,7 @@ Figure&nbsp;2: Presencia de especies por isla (frecuencia).
 <p><strong>Pregunta:</strong> ¿Existen diferencias notables entre machos y hembras en alguna característica cuantitativa?</p>
 <section id="selección-de-variable-y-justificación" class="level3">
 <h3 class="anchored" data-anchor-id="selección-de-variable-y-justificación">Selección de Variable y Justificación</h3>
-<p>Elegiremos la variable <code>culmen_length_mm</code> (longitud del culmen) para comparar las distribuciones. Utilizaremos un <strong>Histograma con Transparencia</strong> o <strong>Gráficos de Densidad solapados</strong>.</p>
+<p>Elegiremos la variable <code>culmen_length_mm</code> (longitud del culmen) para comparar las distribuciones debido a que en los macho el pico es más largo para competir o por roles específicos de alimentación. Utilizaremos un <strong>Histograma con Transparencia</strong>.</p>
 <ul>
 <li><strong>Justificación</strong>: Al comparar solo dos categorías (macho/hembra), superponer las distribuciones permite ver directamente el desplazamiento de la media y la variabilidad de cada grupo.</li>
 </ul>
@@ -486,23 +486,23 @@ Figure&nbsp;2: Presencia de especies por isla (frecuencia).
 <div aria-describedby="fig-density-sexo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-6938f0ba2e7a48afac45215bb50b6289.vega-embed {
+  #altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6938f0ba2e7a48afac45215bb50b6289.vega-embed details,
-  #altair-viz-6938f0ba2e7a48afac45215bb50b6289.vega-embed details summary {
+  #altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a.vega-embed details,
+  #altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6938f0ba2e7a48afac45215bb50b6289"></div>
+<div id="altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6938f0ba2e7a48afac45215bb50b6289") {
-      outputDiv = document.getElementById("altair-viz-6938f0ba2e7a48afac45215bb50b6289");
+    if (outputDiv.id !== "altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a") {
+      outputDiv = document.getElementById("altair-viz-4c2bf3c6b0c14594a093b8fa480fab5a");
     }
 
     const paths = {
